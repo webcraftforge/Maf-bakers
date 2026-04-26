@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAFS Bakers | Premium Handmade Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAFS Bakers offers premium handmade brownies, cupcakes, loaf cakes, signature pastries, and more in Karachi. Pre-order online today.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="Images/cropped_item (2).webp">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="logo">
+    <img src="Images/mafs logo.png" alt="MAFS Bakers Logo">
+  </div>
+
+  <nav id="nav-menu">
+    <div id="close-menu">&times;</div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">☰</div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Handcrafted Delights Freshly Baked</h1>
+    <p>Made with love & finest ingredients<br> </p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+  </div>
+  <div class="hero-image">
+    <img src="Images/cropped_item (2).webp" alt="MAFS Bakers Signature Bread">
+  </div>
+  
+</section>
+
+<!-- ===== ABOUT SECTION==== -->
+<section id="about" class="about-section">
+  <h2>About us</h2>
+  <p>
+    Since 2013, MAFS Bakers has been delivering fresh, homemade treats with the highest standards of hygiene and quality. Our mission is to make every bite delightful.
+  </p>
+  <p>
+     From rich brownies and artisanal cupcakes to soft loaf cakes, signature pastries, and delicious frozen snacks, every item at MAFS Bakers is crafted with care to bring you the perfect homemade taste.
+  </p>
+</section>
+
+<!-- ===== MENU SECTION ===== -->
+<section id="menu" class="menu-section">
+
+  <h2>Our Menu</h2>
+
+  <!-- Category Slider -->
+  <div class="menu-nav">
+    <a href="#brownies" class="active">Brownies</a>
+    <a href="#cupcakes">Cupcakes</a>
+    <a href="#loaf">Loaf Tea Cakes</a>
+    <a href="#pastries">Signature Pastries</a>
+    <a href="#zest">Zest n Spice</a>
+    <a href="#frozen">Frozen Snacks</a>
+  </div>
+
+  <!-- ================= BROWNIES ================= -->
+  <h3 id="brownies" class="category-heading">Brownies</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/fudge b.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Classic Brownies</h4>
+
+        <p class="desc">
+         Fudgy, rich, nutty, and perfectly chocolatey—soft in the center with a deep cocoa flavor.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1000</p>
+
+          <button onclick="openPopup(
+            'Classic Brownies',
+            'images/fudge b.jpg',
+            'Fudgy, rich, nutty, and perfectly chocolatey—soft in the center with a deep cocoa flavor.',
+            { box6:1000, box12:1950 }
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/bounty2.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Bounty Brownies</h4>
+        <p class="desc">Decadent chocolate brownies paired with a luscious coconut topping.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1500</p>
+          <button onclick="openPopup('Bounty Brownies','images/bounty2.jpg','Decadent chocolate brownies paired with a luscious coconut topping',{ box6:1500, box12:2950 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-card">
+      <img src="images/double chcoc bronie copy.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Double Chocolate Brownies</h4>
+        <p class="desc">Ultra‑rich brownies loaded with chocolate for true chocolate lovers.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1200</p>
+          <button onclick="openPopup('Double Chocolate Brownies','images/double chcoc bronie copy.jpg','Ultra‑rich brownies loaded with chocolate for true chocolate lovers.',{ box6:1200, box12:2350 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- ================= CUPCAKES ================= -->
+  <h3 id="cupcakes" class="category-heading">Cupcakes</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/red velvet copy.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Red velvet Cupcake</h4>
+
+        <p class="desc">
+          Soft, moist, and beautifully red, topped with smooth cream cheese frosting.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1800</p>
+
+          <button onclick="openPopup(
+            'Red VelveT Cupcakes',
+            'images/red velvet copy.jpg',
+            'Soft, moist, and beautifully red, topped with smooth cream cheese frosting.',
+            { box6:1800, box12:3500}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/chocolate chip.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Chocolate Chip Cupcakes</h4>
+        <p class="desc">Light vanilla cupcakes filled with gooey chocolate chips in every bite.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1400</p>
+          <button onclick="openPopup('Chocolate Chip Cupcakes','images/chocolate chip.jpg','Light vanilla cupcakes filled with gooey chocolate chips in every bite.',{ box6:1400, box12:2740 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/vanilla cupcake.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Vanilla Cupcakes</h4>
+        <p class="desc">Fluffy, classic vanilla cupcakes with a soft, delicate crumb.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1300</p>
+          <button onclick="openPopup('Vanilla Cupcakes','images/vanilla cupcake.jpg','Fluffy, classic vanilla cupcakes with a soft, delicate crumb.',{ box6:1300, box12:2550 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/Blackout-Cupcakes~2 copy.png" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Double Chocolate Cupcakes</h4>
+        <p class="desc">Rich chocolate cupcakes with an intense cocoa flavor and moist texture.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1500</p>
+          <button onclick="openPopup('Chocolate Brownie','images/Blackout-Cupcakes~2 copy.png','Rich chocolate cupcakes with an intense cocoa flavor and moist texture.',{ box6:1500, box12:2950 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Loaf Tea cakes  -->
+
+    <h3 id="loaf" class="category-heading">Loaf Tea Cakes</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/banana bread.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Banana Bread</h4>
+
+        <p class="desc">
+          Moist, tender, naturally sweet with ripe bananas, crunchy walnuts, and melty chocolate chips.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 760</p>
+
+          <button onclick="openPopup(
+            'Banana Bread',
+            'images/banana bread.jpg',
+            'Moist, tender, naturally sweet with ripe bananas, crunchy walnuts, and melty chocolate chips.',
+            { half6:760, full:1500}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/Chocolate-Chip-Loaf-Cake-7FEAT.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Vanilla Butter Chip Cake</h4>
+        <p class="desc">Soft vanilla butter loaf generously studded with chocolate chips for balanced sweetness.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1300</p>
+          <button onclick="openPopup('Vanilla Butter Chip Cake','images/Chocolate-Chip-Loaf-Cake-7FEAT.jpg','Soft vanilla butter loaf generously studded with chocolate chips for balanced sweetness.',{ half:1300, full:2550 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/vanilla butter cake.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Vanilla Butter Cake</h4>
+        <p class="desc">Classic, rich, buttery with a soft crumb—simple, elegant, timeless.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1200</p>
+          <button onclick="openPopup('Vanilla Butter Cake','images/vanilla butter cake.jpg','Classic, rich, buttery with a soft crumb—simple, elegant, timeless.',{ half:1200, full:2350 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- repeat items -->
+    <div class="menu-card">
+      <img src="images/lemon cake.jpg" alt="Chocolate Brownie">
+
+      <div class="info">
+        <h4>Lemon Cake</h4>
+        <p class="desc">Light, moist, refreshing with bright lemon flavor and delicate citrus notes.</p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 900</p>
+
+          <button onclick="openPopup('Lemon Cake',
+          'images/lemon cake.jpg',
+          'Light, moist, refreshing with bright lemon flavor and delicate citrus notes.',
+          { half:900, full:1750 })">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   
+    <h3 id="pastries" class="category-heading">Signature Pastries</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/lemon three milk.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Lemon Curd Tri‑Milk Cake </h4>
+
+        <p class="desc">
+          Soft sponge soaked in three kinds of milk, layered with tangy lemon curd.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 2700</p>
+
+          <button onclick="openPopup(
+            'Lemon Curd Tri‑Milk Cake ',
+            'images/lemon three milk.jpg',
+            'Soft sponge soaked in three kinds of milk, layered with tangy lemon curd.',
+            { box6:2700, box12:5300}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/Three-Milk-Cake.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chocolate Tri‑Milk Cake </h4>
+
+        <p class="desc">
+          Rich chocolate sponge soaked in tri‑milk, topped with glossy chocolate ganache.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 2500</p>
+
+          <button onclick="openPopup(
+            'Chocolate Tri‑Milk Cake ',
+            'images/Three-Milk-Cake.jpg',
+            'Rich chocolate sponge soaked in tri‑milk, topped with glossy chocolate ganache.',
+            { box6:2500, box12:4900}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/choco cake.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chocolate Cake</h4>
+
+        <p class="desc">
+          Deep, rich, irresistibly moist with intense chocolate flavor.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1800</p>
+
+          <button onclick="openPopup(
+            'Chocolate Cake',
+            'images/choco cake.jpg',
+            'Deep, rich, irresistibly moist with intense chocolate flavor.',
+            { box6:1800, box12:3500}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+     <h3 id="zest" class="category-heading">Zest & Spice</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/Orange-Loaf-Cake-Feature.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Orange Loaf Cake</h4>
+
+        <p class="desc">
+          Soft, fragrant with fresh orange flavor, topped with aromatic orange rinds.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 1100</p>
+
+          <button onclick="openPopup(
+            'Orange Loaf Cake',
+            'images/Orange-Loaf-Cake-Feature.jpg',
+            'Soft, fragrant with fresh orange flavor, topped with aromatic orange rinds.',
+            { half:1100, full:215000}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/carrot cupcake.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Carrot Cupcakes </h4>
+
+        <p class="desc">
+          Moist, warmly spiced carrot cupcakes topped with cream cheese frosting.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 2000</p>
+
+          <button onclick="openPopup(
+            'Carrot Cupcakes ',
+            'images/carrot cupcake.jpg',
+            'Moist, warmly spiced carrot cupcakes topped with cream cheese frosting.',
+            { box6:2000, box12:3900}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/carrot cake pcs.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Carrot Cake</h4>
+
+        <p class="desc">
+        Moist, warmly spiced carrot cake generously frosted with cream cheese frosting.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 2100</p>
+
+          <button onclick="openPopup(
+            'Carrot Cake',
+            'images/carrot cake pcs.jpg',
+            'Moist, warmly spiced carrot cake generously frosted with cream cheese frosting.',
+            { box6:2100, box12:4100}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 id="frozen" class="category-heading">Frozen Snacks</h3>
+
+  <div class="menu-items">
+
+    <div class="menu-card">
+      <img src="images/chicken nuggets.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chicken Nuggets</h4>
+
+        <p class="desc">
+          Crispy outside, juicy inside—classic nuggets.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 700</p>
+
+          <button onclick="openPopup(
+            'Chicken Nuggets',
+            'images/chicken nuggets.jpg',
+            'Crispy outside, juicy inside—classic nuggets.',
+            { dozen1:700, dozen2:1350}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/haray bharay nuggets.jpeg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Haray Bharay Chicken Nuggets </h4>
+
+        <p class="desc">
+          Nuggets blended with green chillies and coriander for a herby, mildly spicy twist.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 800</p>
+
+          <button onclick="openPopup(
+            'Haray Bharay Chicken Nuggets',
+            'images/haray bharay nuggets.jpeg',
+            'Nuggets blended with green chillies and coriander for a herby, mildly spicy twist.',
+            { dozen1:800, dozen2:1550}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/shami kabab.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chicken Shami Kabab</h4>
+
+        <p class="desc">
+        Minced chicken kababs with traditional spices, perfect for pan‑frying.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 800</p>
+
+          <button onclick="openPopup(
+            'Chicken Shami Kabab',
+            'images/shami kabab.jpg',
+            'Minced chicken kababs with traditional spices, perfect for pan‑frying.',
+            { dozen1:2100, dozen2:4100}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="menu-card">
+      <img src="images/cutlets.webp" alt="Cupcake">
+
+      <div class="info">
+        <h4>Creamy Potato & Chicken Cutlets</h4>
+
+        <p class="desc">
+         Crispy outside, creamy and juicy inside.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 750</p>
+
+          <button onclick="openPopup(
+            'Creamy Potato & Chicken Cutlets  ',
+            'images/cutlets.webp',
+            'Crispy outside, creamy and juicy inside.',
+            { dozen1:750, dozen2:1450}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/tikka samosa.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chicken Tikka Samosa </h4>
+
+        <p class="desc">
+          Golden samosas filled with creamy, spicy chicken tikka.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 650</p>
+
+          <button onclick="openPopup(
+            'Chicken Tikka Samosa',
+            'images/tikka samosa.jpg',
+            'Golden samosas filled with creamy, spicy chicken tikka.',
+            { dozen1:650, dozen2:1250}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+  </div>
+
+
+     <div class="menu-card">
+      <img src="images/chicken samosa.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chicken Samosa</h4>
+
+        <p class="desc">
+        Crisp pastry filled with seasoned chicken and aromatic spices.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 600</p>
+
+          <button onclick="openPopup(
+            'Chicken Samosa',
+            'images/chicken samosa.jpg',
+            'Crisp pastry filled with seasoned chicken and aromatic spices.',
+            { dozen1: 600, dozen2: 1150}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+  
+  </div>
+
+  
+    <div class="menu-card">
+      <img src="images/pizza samosa.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Pizza Samosa</h4>
+
+        <p class="desc">
+          Fusion samosa stuffed with cheesy, pizza‑style chicken filling.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 750</p>
+
+          <button onclick="openPopup(
+            'Pizza Samosa',
+            'images/pizza samosa.jpg',
+            'Fusion samosa stuffed with cheesy, pizza‑style chicken filling.',
+            { dozen1:750, dozen2:1450}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+     <div class="menu-card">
+      <img src="images/alo samosa.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Street‑Style Aloo Samosa  </h4>
+
+        <p class="desc">
+         Classic potato samosas with bold desi flavors.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 500</p>
+
+          <button onclick="openPopup(
+            'Street‑Style Aloo Samosa  ',
+            'images/alo samosa.jpg',
+            'Classic potato samosas with bold desi flavors.',
+            { dozen1:500, dozen2:1000}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+
+     <div class="menu-card">
+      <img src="images/chicken spring roll.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Chicken Spring Rolls</h4>
+
+        <p class="desc">
+        Crispy rolls with chicken, noodles, and vegetables.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 650</p>
+
+          <button onclick="openPopup(
+            'Chicken Spring Rolls',
+            'images/chicken spring roll.jpg',
+            'Crispy rolls with chicken, noodles, and vegetables.',
+            { dozen1:650, dozen2:1250}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="menu-card">
+      <img src="images/vegetable spring roll.jpg" alt="Cupcake">
+
+      <div class="info">
+        <h4>Vegetable  Spring Rolls</h4>
+
+        <p class="desc">
+         Crunchy rolls packed with seasoned vegetables.
+        </p>
+
+        <div class="bottom-row">
+          <p class="price">Rs 2000</p>
+
+          <button onclick="openPopup(
+            'Vegetable Spring Rolls',
+            'images/vegetable spring roll.jpg',
+            'Crunchy rolls packed with seasoned vegetables.',
+            { dozen1:550, dozen2:1050}
+          )">
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- ===== POPUP ===== -->
+<div id="popup" class="popup">
+
+  <div class="popup-box">
+
+    <span class="close" onclick="closePopup()">✖</span>
+
+    <img id="p-img">
+    <h3 id="p-name"></h3>
+    <p id="p-desc"></p>
+
+    <div class="option-title">Choose Size</div>
+    <div class="size-box" id="sizeBox"></div>
+
+    <div class="qty-box">
+      <button onclick="changeQty(-1)">-</button>
+      <span id="qty">1</span>
+      <button onclick="changeQty(1)">+</button>
+    </div>
+
+    <h4 id="p-price"></h4>
+
+    <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+
+  </div>
+
+</div>
+
+<!-- ===== FLOATING CART ICON ===== -->
+<div id="cart-icon">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- ===== CART POPUP (PRO UI) ===== -->
+<div class="cart-popup" id="cart-popup">
+
+  <!-- HEADER -->
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span class="close-cart" id="close-cart">✖</span>
+  </div>
+
+  <!-- ITEMS -->
+  <div class="cart-items-container">
+    <!-- JS will inject items here -->
+  </div>
+
+  <!-- TOTAL (JS will update) -->
+  <div class="cart-total">
+    Total: Rs <span id="cart-total-value">0</span>
+  </div>
+
+  <!-- USER INFO FORM -->
+  <div class="cart-form">
+    <input type="text" id="user-name" placeholder="Enter your name" />
+    <input type="text" id="user-contact" placeholder="Enter your contact number" />
+    <input type="text" id="user-address" placeholder="Enter your address" />
+  </div>
+
+  <!-- CHECKOUT BUTTON -->
+  <button id="checkout-whatsapp" class="checkout-btn">
+    Checkout via WhatsApp
+  </button>
+
+</div>
+
+
+<!-- ===== CONTACT & POLICIES ===== -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <p>Phone: +92 3362373888</p>
+  <p>Location: Karachi, Pakistan</p>
+  <p>
+    Follow us on Instagram: 
+    <a href="https://instagram.com/mafsbakers" target="_blank">@mafsbakers</a>
+  </p>
+
+  <div class="policies-collapsible">
+    <button class="policies-toggle">Policies +</button>
+    <div class="policies-content">
+      <p>• Orders are confirmed only after <strong>100% advance payment</strong>.</p>
+      <p>• Pre-orders only. Please place your order at least <strong>3 days before delivery</strong>.</p>
+      <p>• Advance payments are <strong>non-refundable</strong> but may be applied to future orders.</p>
+      <p>• Cancel within 24 hours: full advance applied to future order.</p>
+      <p>• Cancel within 48 hours: 25% of advance applied to future order.</p>
+      <p>• No adjustment after above timeframes.</p>
+      <p>• Delivery via <strong>Bykea</strong>, charges apply as per rates.</p>
+      <p>Thank you for choosing MAFS Bakers!</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
